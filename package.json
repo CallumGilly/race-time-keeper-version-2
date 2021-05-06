@@ -1,0 +1,25 @@
+{
+  "name": "race-time-keeper-version-2",
+  "version": "1.0.0",
+  "description": "An app to keep track of times for a variety of races.",
+  "main": "main/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/CallumGilly/race-time-keeper-version-2.git"
+  },
+  "keywords": [
+    "MYSQL",
+    "Time",
+    "JSON",
+    "Express"
+  ],
+  "author": "Callum Gilchrist <callumgilchrist21@btinternet.com> (https://callumgilly.github.io/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CallumGilly/race-time-keeper-version-2/issues"
+  },
+  "homepage": "https://github.com/CallumGilly/race-time-keeper-version-2#readme"
+}
