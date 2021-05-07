@@ -4,7 +4,7 @@
   "description": "An app to keep track of times for a variety of races.",
   "main": "main/index.js",
   "scripts": {
-    "test": "mocha tests/test",
+    "test": "mocha --exit ./**/*.js",
     "live": "nodemon .",
     "start": "node .",
     "debug": "nodemon --inspect=0.0.0.0:9229 main/index.js"
