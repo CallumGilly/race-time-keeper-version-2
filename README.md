@@ -13,6 +13,10 @@ An app to keep track of times for a variety of races.
 - Hold multiple races for each user and length
 - Be accesed with basic requests (JSON response)
 
+## Running the code
+
+The program can currently be ran with: `docker-compose -f docker-compose.dev.yml up --build`
+
 ## Credits
 
 Made by [Callum Gilchrist](https://github.com/CallumGilly/)
