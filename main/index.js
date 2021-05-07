@@ -36,5 +36,5 @@ app.post(`/test`, (req,res) => {
 
 //Listener
 app.listen(port, () => {
-    console.log(`Listening on port ${port}`);
+    console.log(`Listening on http://localhost:${port}`);
 })
