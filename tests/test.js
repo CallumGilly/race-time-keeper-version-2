@@ -7,7 +7,7 @@ var server = supertest.agent(`http://localhost:3030`);
 describe(`Test Pages unit test:`, () => {
     it(`Should return the User dave`, (done) => {
         server
-        .get(`/test/jsonOut`)
+        .get(`/test`)
         .expect("Content-type",/json/)
         .expect(200)
         .end((err,res) => {
@@ -21,7 +21,7 @@ describe(`Test Pages unit test:`, () => {
     it(`Should return the data send`, () => {
         const testData = {foo: 'bar'}
         server
-        .post(`/test/bodyParser`)
+        .post(`/test`)
         .send(testData)
         .expect("Content-type",/json/)
         .expect(200)
