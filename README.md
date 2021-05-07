@@ -15,7 +15,7 @@ An app to keep track of times for a variety of races.
 
 ## Running the code
 
-The program can currently be ran with: `docker-compose -f docker-compose.dev.yml up --build`
+The program can currently be ran with: `docker-compose -f docker-compose.dev.yml up --build` and tested with: `docker build -t race-time-keeper --target test .`
 
 ## Credits
 
