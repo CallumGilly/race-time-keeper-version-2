@@ -14,24 +14,24 @@ app.use(bodyParser.json())
 //#region Code to test the JSON parsing mechanisms
 
 //Should return the `User` value inside of testList
-app.get(`/test/jsonOut`, (req, res) => {
+app.get(`/test`, (req, res) => {
     testList = {
         User: 'David'
     };
     res.json({
-        'error': false, 
+        'error': false,
         'user': testList.User
     });
 });
 
 //Should return the data it was sent
-app.post(`/test/bodyParser`, (req,res) => {
+app.post(`/test`, (req,res) => {
     console.log(req.body);
     res.json({
         'error': false,
         'data': req.body
     });
-}); 
+});
 //#endregion
 
 //Listener
