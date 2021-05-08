@@ -16,6 +16,10 @@ An app to keep track of times for a variety of races.
 ## Running the code
 
 The program can currently be ran with: `docker-compose -f docker-compose.dev.yml up --build` and tested with: `docker build -t race-time-keeper --target test .`
+You can also test for youself when the program is build with curl statements along the lines of:'
+
+- `curl --data '{"foo":"bar"}' --header 'content-type: application/json' localhost:3030/test`
+- `curl localhost:3030/test`
 
 ## Credits
 
