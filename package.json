@@ -2,7 +2,7 @@
   "name": "race-time-keeper-version-2",
   "version": "1.0.0",
   "description": "An app to keep track of times for a variety of races.",
-  "main": "main/index.js",
+  "main": "app/index.js",
   "scripts": {
     "test": "mocha --exit ./**/*.js",
     "live": "nodemon .",

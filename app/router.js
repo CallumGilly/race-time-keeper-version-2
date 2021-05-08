@@ -1,20 +1,10 @@
-//Import depencys
-const express = require(`express`);
-const bodyParser = require(`body-parser`)
-
-
-//Set constants
-const port = 3030;
-
-//#region Set up app
-var app = express();
-app.use(bodyParser.json())
-//#endregion
+express = require(`express`);
+router = express.Router();
 
 //#region Code to test the JSON parsing mechanisms
 
 //Should return the `User` value inside of testList
-app.get(`/test`, (req, res) => {
+router.get(`/test`, (req, res) => {
     testList = {
         User: 'David'
     };
@@ -25,7 +15,7 @@ app.get(`/test`, (req, res) => {
 });
 
 //Should return the data it was sent
-app.post(`/test`, (req,res) => {
+router.post(`/test`, (req,res) => {
     console.log(req.body);
     res.json({
         'error': false,
@@ -34,7 +24,4 @@ app.post(`/test`, (req,res) => {
 });
 //#endregion
 
-//Listener
-app.listen(port, () => {
-    console.log(`Listening on http://localhost:${port}`);
-})
+module.exports = router;
